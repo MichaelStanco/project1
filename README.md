@@ -28,7 +28,7 @@ Bring a simple slide deck providing an overview of your results. You should pres
 
 For the above questions, there are executable Hive queries to perform sufficient analysis. 
 
-A link to slide show results can be found here:
+A link to slide results can be found here:
 https://docs.google.com/presentation/d/1L9MIHEpRBYj0WIZQaeFdwf5Ojmu87NPQDjmXIFCATlY/edit?usp=sharing
 
 ## Getting Started - Windows & Unix
@@ -76,7 +76,7 @@ wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-20
 wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-10.tsv.gz   
 wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-09.tsv.gz   
 gunzip *.gz
-cd ..
+ cd ..
 mkdir q4
 cd q4
 wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-090000.gz
@@ -90,13 +90,13 @@ gunzip *.gz
 Load queries into Hive and execute in the following order:
 - you may have to uncomment some load table blocks
 - change LOAD DATA LOCAL INPATH to your created project1 directory from above
-populateDBproj1.sql
-proj1_1.sql
-proj1_2.sql
-proj1_3.sql
-proj1_4.sql
-proj1_5.sql
-proj1_6.sql
+* populateDBproj1.sql
+* proj1_1.sql
+* proj1_2.sql
+* proj1_3.sql
+* proj1_4.sql
+* proj1_5.sql
+* proj1_6.sql
 
 ## Contributors
 
