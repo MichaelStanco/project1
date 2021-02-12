@@ -6,7 +6,6 @@ Project 1 will consist of using big data tools to answer questions about dataset
 
 The questions should be answered using Hive or MapReduce. Feel free to use whichever tool seems best to you given the question or a combination of the two. For each question you should have a repeatable process that would work on a larger dataset, not just an ad hoc calculation.
 
-
     1. Which English wikipedia article got the most traffic on January 20, 2021?
     2. What English wikipedia article has the largest fraction of its readers follow an internal link to another wikipedia article?
     3. What series of wikipedia articles, starting with Hotel California, keeps the largest fraction of its readers clicking on internal links? This is similar to (2), but you should continue the analysis past the first article. There are multiple ways you can count this fraction, be careful to be clear about the method you find most appropriate.
@@ -27,30 +26,82 @@ Bring a simple slide deck providing an overview of your results. You should pres
 
 ## Features
 
-List of features ready and TODOs for future development
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+For the above questions, there are executable Hive queries to perform sufficient analysis. 
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+A link to slide show results can be found here:
+https://docs.google.com/presentation/d/1L9MIHEpRBYj0WIZQaeFdwf5Ojmu87NPQDjmXIFCATlY/edit?usp=sharing
 
-## Getting Started
-   
-(include git clone command)
-(include all environment setup steps)
+## Getting Started - Windows & Unix
 
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
+Run the following commands line by line to emulate my project environment:
+`git clone https://github.com/MichaelStanco/project1
+cd project1
+mkdir q1
+cd q1
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-000000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-010000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-020000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-030000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-040000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-050000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-060000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-070000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-080000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-090000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-100000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-110000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-120000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-130000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-140000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-150000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-160000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-170000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-180000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-190000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-200000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-210000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-220000.gz 
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-230000.gz 
+gunzip *.gz
+cd ..
+mkdir revisiondata
+cd revisiondata
+wget https://dumps.wikimedia.org/other/mediawiki_history/2020-12/enwiki/2020-12.enwiki.2020-12.tsv.bz2    
+bzip2 -d 2020-12.enwiki.2020-12.tsv.bz2  
+cd ..
+mkdir clickstreamdata
+cd clickstreamdata
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-12.tsv.gz 
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-11.tsv.gz   
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-10.tsv.gz   
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-09.tsv.gz   
+gunzip *.gz
+cd ..
+mkdir q4
+cd q4
+wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-090000.gz
+wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-000000.gz
+gunzip *.gz
+`
 
-- All the `code` required to get started
-- Images of what it should look like
 
 ## Usage
 
-> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+Load queries into Hive and execute in the following order:
+- you may have to uncomment some load table blocks
+- change LOAD DATA LOCAL INPATH to your created project1 directory from above
+populateDBproj1.sql
+proj1_1.sql
+proj1_2.sql
+proj1_3.sql
+proj1_4.sql
+proj1_5.sql
+proj1_6.sql
 
 ## Contributors
 
 Michael Stanco
+
+## License
+
+This project uses the following license: [MIT License](https://mit-license.org/).
