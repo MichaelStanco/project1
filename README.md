@@ -34,54 +34,54 @@ https://docs.google.com/presentation/d/1L9MIHEpRBYj0WIZQaeFdwf5Ojmu87NPQDjmXIFCA
 ## Getting Started - Windows & Unix
 
 Run the following commands line by line to emulate my project environment:
-`git clone https://github.com/MichaelStanco/project1
-cd project1<br>
-mkdir q1<br>
-cd q1<br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-000000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-010000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-020000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-030000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-040000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-050000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-060000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-070000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-080000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-090000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-100000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-110000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-120000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-130000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-140000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-150000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-160000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-170000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-180000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-190000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-200000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-210000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-220000.gz <br>
-wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-230000.gz <br>
-gunzip *.gz<br>
-cd ..<br>
-mkdir revisiondata<br>
-cd revisiondata<br>
-wget https://dumps.wikimedia.org/other/mediawiki_history/2020-12/enwiki/2020-12.enwiki.2020-12.tsv.bz2    <br>
-bzip2 -d 2020-12.enwiki.2020-12.tsv.bz2  <br>
-cd ..<br>
-mkdir clickstreamdata<br>
-cd clickstreamdata<br>
-wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-12.tsv.gz <br>
-wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-11.tsv.gz   <br>
-wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-10.tsv.gz   <br>
-wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-09.tsv.gz   <br>
-gunzip *.gz<br>
-cd ..<br>
-mkdir q4<br>
-cd q4<br>
-wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-090000.gz<br>
-wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-000000.gz<br>
-gunzip *.gz<br>
+`git clone https://github.com/MichaelStanco/project1 <br/>
+cd project1<br/>
+mkdir q1<br/>
+cd q1<br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-000000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-010000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-020000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-030000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-040000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-050000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-060000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-070000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-080000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-090000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-100000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-110000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-120000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-130000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-140000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-150000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-160000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-170000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-180000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-190000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-200000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-210000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-220000.gz <br/>
+wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-230000.gz <br/>
+gunzip *.gz<br/>
+cd ..<br/>
+mkdir revisiondata<br/>
+cd revisiondata<br/>
+wget https://dumps.wikimedia.org/other/mediawiki_history/2020-12/enwiki/2020-12.enwiki.2020-12.tsv.bz2    <br/>
+bzip2 -d 2020-12.enwiki.2020-12.tsv.bz2  <br/>
+cd ..<br/>
+mkdir clickstreamdata<br/>
+cd clickstreamdata<br/>
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-12.tsv.gz <br/>
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-11.tsv.gz   <br/>
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-10.tsv.gz   <br/>
+wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-09.tsv.gz   <br/>
+gunzip *.gz<br/>
+cd ..<br/>
+mkdir q4<br/>
+cd q4<br/>
+wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-090000.gz<br/>
+wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-000000.gz<br/>
+gunzip *.gz<br/>
 `
 
 
