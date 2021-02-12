@@ -33,7 +33,7 @@ https://docs.google.com/presentation/d/1L9MIHEpRBYj0WIZQaeFdwf5Ojmu87NPQDjmXIFCA
 
 ## Getting Started - Windows & Unix
 
-Run the following commands line by line to emulate my project environment:
+Run the following commands line by line to emulate my project environment:<br/>
 git clone https://github.com/MichaelStanco/project1 <br/>
 cd project1<br/>
 mkdir q1<br/>
