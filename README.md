@@ -35,9 +35,9 @@ https://docs.google.com/presentation/d/1L9MIHEpRBYj0WIZQaeFdwf5Ojmu87NPQDjmXIFCA
 
 Run the following commands line by line to emulate my project environment:
 `git clone https://github.com/MichaelStanco/project1
-cd project1
-mkdir q1
-cd q1
+> cd project1
+> mkdir q1
+> cd q1
 wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-000000.gz 
 wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-010000.gz 
 wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-020000.gz 
@@ -76,7 +76,7 @@ wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-20
 wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-10.tsv.gz   
 wget https://dumps.wikimedia.org/other/clickstream/2020-12/clickstream-enwiki-2020-09.tsv.gz   
 gunzip *.gz
- cd ..
+cd ..
 mkdir q4
 cd q4
 wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-090000.gz
