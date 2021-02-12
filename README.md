@@ -34,7 +34,7 @@ https://docs.google.com/presentation/d/1L9MIHEpRBYj0WIZQaeFdwf5Ojmu87NPQDjmXIFCA
 ## Getting Started - Windows & Unix
 
 Run the following commands line by line to emulate my project environment:
-`git clone https://github.com/MichaelStanco/project1 <br/>
+git clone https://github.com/MichaelStanco/project1 <br/>
 cd project1<br/>
 mkdir q1<br/>
 cd q1<br/>
@@ -82,7 +82,7 @@ cd q4<br/>
 wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-090000.gz<br/>
 wget https://dumps.wikimedia.org/other/pageviews/2020/2020-12/pageviews-20201211-000000.gz<br/>
 gunzip *.gz<br/>
-`
+
 
 
 ## Usage
