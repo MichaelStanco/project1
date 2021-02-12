@@ -35,7 +35,7 @@ https://docs.google.com/presentation/d/1L9MIHEpRBYj0WIZQaeFdwf5Ojmu87NPQDjmXIFCA
 
 Run the following commands line by line to emulate my project environment:
 `git clone https://github.com/MichaelStanco/project1
-> cd project1
+<br>> cd project1<br>
 > mkdir q1
 > cd q1
 wget https://dumps.wikimedia.org/other/pageviews/2021/2021-01/pageviews-20210120-000000.gz 
